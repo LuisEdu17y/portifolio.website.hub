@@ -41,6 +41,43 @@
 
   <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Open Graph image -->
+  <meta property="og:image" content="https://portifolio-website-hub.vercel.app/imagem/profile.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://portifolio-website-hub.vercel.app/imagem/profile.jpg">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luís Eduardo Carvalho Ferreira",
+    "url": "https://portifolio-website-hub.vercel.app",
+    "image": "https://portifolio-website-hub.vercel.app/imagem/profile.jpg",
+    "sameAs": [
+      "https://github.com/LuisEdu17y",
+      "https://linkedin.com/in/lu%C3%ADs-eduardo-00a685359"
+    ],
+    "jobTitle": "Desenvolvedor Full Stack",
+    "description": "Estudante de ADS com projetos reais em produção: FastAPI, PostgreSQL, JWT, CI/CD. Disponível para estágio em TI em Brasília.",
+    "knowsAbout": ["Python", "FastAPI", "JavaScript", "PostgreSQL", "REST APIs", "JWT", "Git", "GitHub Actions"],
+    "email": "mailto:luis.eduardo17y@gmail.com",
+    "telephone": "+55-61-99185-5550",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brasília",
+      "addressRegion": "DF",
+      "addressCountry": "BR"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "UniCEUB",
+      "url": "https://www.uniceub.br"
+    }
+  }
+  </script>
 </head>
 
 <body>
@@ -139,6 +176,30 @@
               <span class="stack-pill" role="listitem">Git</span>
             </div>
           </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700" aria-label="Números do desenvolvedor">
+            <div class="hstat">
+              <span class="hstat-num" data-count="2">0</span>
+              <span class="hstat-label">Apps em produção</span>
+            </div>
+            <div class="hstat-sep" aria-hidden="true"></div>
+            <div class="hstat">
+              <span class="hstat-num" data-count="8">0</span>
+              <span class="hstat-label">Tecnologias</span>
+            </div>
+            <div class="hstat-sep" aria-hidden="true"></div>
+            <div class="hstat">
+              <span class="hstat-num">3º</span>
+              <span class="hstat-label">Semestre ADS</span>
+            </div>
+            <div class="hstat-sep" aria-hidden="true"></div>
+            <div class="hstat">
+              <span class="hstat-avail">
+                <span class="status-dot" aria-hidden="true"></span>
+                Disponível agora
+              </span>
+            </div>
+          </div>
         </div>
 
         <div class="hero-visual" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" aria-hidden="true">
@@ -209,18 +270,34 @@ app = FastAPI()
 
           <div class="about-content-col" data-aos="fade-left" data-aos-duration="700">
             <p class="about-lead">
-              Sou um desenvolvedor full stack apaixonado por tecnologia, com foco em construir
-              soluções robustas no back-end usando <strong>Python e FastAPI</strong>.
-              No 3º semestre de ADS no UniCEUB, já coloquei em produção aplicações completas
-              com autenticação JWT, banco relacional e CI/CD.
+              Comecei a programar por curiosidade — queria entender como os sites funcionam por
+              dentro. Hoje, com 3 semestres de ADS no UniCEUB, já tenho dois projetos completos
+              em produção: um com <strong>FastAPI + PostgreSQL + JWT</strong> no Railway, e outro
+              com <strong>CI/CD automatizado</strong> via GitHub Actions. Não espero uma vaga para
+              aprender: aprendo para conquistar a vaga.
             </p>
 
             <p class="about-body">
-              Minha experiência prática inclui desenvolvimento de APIs RESTful, integração com
-              PostgreSQL via ORM SQLModel/SQLAlchemy, deploys automatizados no Railway e Vercel,
-              e escrita de testes unitários com Jest. Busco minha primeira oportunidade de estágio
-              para crescer em equipe e contribuir com soluções reais.
+              Construo APIs RESTful, integro bancos relacionais via ORM, configuro pipelines de
+              deploy e escrevo testes automatizados com Jest. Trabalho em equipe com metodologia
+              Scrum no Projeto Integrador da faculdade. Busco minha primeira oportunidade de
+              estágio para crescer em ambiente profissional e contribuir com soluções reais.
             </p>
+
+            <div class="about-achievements" aria-label="Conquistas técnicas">
+              <div class="ach-card" data-aos="zoom-in" data-aos-delay="100">
+                <span class="ach-num">2</span>
+                <span class="ach-label">Projetos em produção</span>
+              </div>
+              <div class="ach-card" data-aos="zoom-in" data-aos-delay="180">
+                <span class="ach-num">☁</span>
+                <span class="ach-label">Deploy na nuvem Railway</span>
+              </div>
+              <div class="ach-card" data-aos="zoom-in" data-aos-delay="260">
+                <span class="ach-num">CI</span>
+                <span class="ach-label">Pipeline CI/CD automático</span>
+              </div>
+            </div>
 
             <dl class="about-info">
               <div class="info-row">
@@ -291,18 +368,22 @@ app = FastAPI()
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="36" height="36" loading="lazy">
                 <span>HTML5</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="36" height="36" loading="lazy">
                 <span>CSS3</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="36" height="36" loading="lazy">
                 <span>JavaScript</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="36" height="36" loading="lazy">
                 <span>Bootstrap 5</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
             </ul>
           </div>
@@ -318,18 +399,22 @@ app = FastAPI()
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="36" height="36" loading="lazy">
                 <span>Python</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="36" height="36" loading="lazy">
                 <span>FastAPI</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <i class="bi bi-shield-lock-fill skill-icon-bi" aria-hidden="true"></i>
                 <span>JWT Auth</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <i class="bi bi-arrow-left-right skill-icon-bi" aria-hidden="true"></i>
                 <span>REST APIs</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
             </ul>
           </div>
@@ -345,18 +430,22 @@ app = FastAPI()
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="36" height="36" loading="lazy">
                 <span>PostgreSQL</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="36" height="36" loading="lazy">
                 <span>MySQL</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="36" height="36" loading="lazy">
                 <span>SQLite</span>
+                <span class="skill-lvl lvl-low" aria-label="Nível: Praticando">Praticando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <i class="bi bi-layers-fill skill-icon-bi" aria-hidden="true"></i>
                 <span>SQLAlchemy</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
             </ul>
           </div>
@@ -372,22 +461,62 @@ app = FastAPI()
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="36" height="36" loading="lazy">
                 <span>Git</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="36" height="36" loading="lazy">
                 <span>GitHub</span>
+                <span class="skill-lvl lvl-high" aria-label="Nível: Dominando">Dominando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <i class="bi bi-infinity skill-icon-bi" aria-hidden="true"></i>
                 <span>GitHub Actions</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
               <li class="skill-item" role="listitem">
                 <i class="bi bi-cloud-arrow-up-fill skill-icon-bi" aria-hidden="true"></i>
                 <span>Railway / Vercel</span>
+                <span class="skill-lvl lvl-mid" aria-label="Nível: Usando">Usando</span>
               </li>
             </ul>
           </div>
 
+        </div>
+
+        <!-- Skill level legend -->
+        <div class="skill-legend" data-aos="fade-up" aria-label="Legenda de níveis">
+          <span class="legend-label">Legenda:</span>
+          <span class="skill-lvl lvl-high">Dominando</span>
+          <span class="skill-lvl lvl-mid">Usando</span>
+          <span class="skill-lvl lvl-low">Praticando</span>
+        </div>
+
+        <!-- GitHub Stats Row -->
+        <div class="gh-stats-row" data-aos="fade-up" data-aos-delay="100">
+          <div class="gh-streak-card">
+            <h3 class="gh-title">
+              <i class="bi bi-fire" aria-hidden="true"></i>
+              Sequência de Commits
+            </h3>
+            <div class="gh-graph-wrapper">
+              <img src="https://github-readme-streak-stats.herokuapp.com/?user=LuisEdu17y&theme=dark&background=0a0a14&border=30363d&ring=6366f1&fire=22d3ee&currStreakLabel=6366f1&sideLabels=94a3b8&dates=475569&hide_border=false"
+                   alt="GitHub Streak Stats de Luís Eduardo"
+                   loading="lazy"
+                   class="gh-graph-img">
+            </div>
+          </div>
+          <div class="gh-langs-card">
+            <h3 class="gh-title">
+              <i class="bi bi-bar-chart-fill" aria-hidden="true"></i>
+              Linguagens no GitHub
+            </h3>
+            <div class="gh-graph-wrapper">
+              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=LuisEdu17y&layout=compact&theme=dark&bg_color=0a0a14&title_color=6366f1&text_color=e2e8f0&border_color=30363d&langs_count=6"
+                   alt="Linguagens mais usadas por Luís Eduardo no GitHub"
+                   loading="lazy"
+                   class="gh-graph-img">
+            </div>
+          </div>
         </div>
 
         <!-- GitHub Contribution Graph -->
@@ -430,9 +559,10 @@ app = FastAPI()
               <p class="featured-type">Aplicação Web Full Stack · PWA</p>
 
               <p class="featured-desc">
-                Plataforma comunitária completa que conecta moradores a eventos locais.
-                Back-end robusto com API REST, autenticação JWT, banco relacional e
-                deploy em nuvem. Front-end responsivo com capacidades de Progressive Web App.
+                <strong>Problema:</strong> moradores não tinham como descobrir eventos locais
+                do próprio bairro. <strong>Solução:</strong> plataforma PWA full stack com API
+                REST, autenticação JWT, banco relacional e deploy automatizado na nuvem — de
+                ideia ao ar em Railway, de ponta a ponta.
               </p>
 
               <ul class="featured-highlights" aria-label="Funcionalidades">
@@ -473,9 +603,9 @@ app = FastAPI()
                   <i class="bi bi-github" aria-hidden="true"></i>
                   Ver no GitHub
                 </a>
-                <a href="https://github.com/LuisEdu17y/Cadastro_conecta_bairro" target="_blank" rel="noopener noreferrer" class="btn-demo">
-                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
-                  Demo ao vivo
+                <a href="https://github.com/LuisEdu17y/Cadastro_conecta_bairro/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="btn-demo">
+                  <i class="bi bi-file-text" aria-hidden="true"></i>
+                  Ver README
                 </a>
               </div>
             </div>
@@ -524,6 +654,48 @@ app = FastAPI()
               </div>
             </div>
           </div>
+
+          <!-- Architecture Diagram -->
+          <div class="arch-diagram-wrapper" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="arch-title">
+              <i class="bi bi-diagram-3-fill" aria-hidden="true"></i>
+              Arquitetura do sistema
+            </h4>
+            <div class="arch-diagram" role="img" aria-label="Diagrama de arquitetura: Frontend conecta ao FastAPI via HTTP/JSON, que conecta ao PostgreSQL via ORM, hospedado no Railway">
+              <div class="arch-node arch-frontend">
+                <div class="arch-node-icon"><i class="bi bi-window" aria-hidden="true"></i></div>
+                <div class="arch-node-name">Front-End</div>
+                <div class="arch-node-tech">HTML · CSS · JS · PWA</div>
+              </div>
+              <div class="arch-connector">
+                <div class="arch-line"></div>
+                <span class="arch-conn-label">HTTP / JSON</span>
+              </div>
+              <div class="arch-node arch-fastapi">
+                <div class="arch-node-icon"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></div>
+                <div class="arch-node-name">FastAPI</div>
+                <div class="arch-node-tech">Python · JWT Auth</div>
+              </div>
+              <div class="arch-connector">
+                <div class="arch-line"></div>
+                <span class="arch-conn-label">ORM / SQL</span>
+              </div>
+              <div class="arch-node arch-db">
+                <div class="arch-node-icon"><i class="bi bi-database-fill" aria-hidden="true"></i></div>
+                <div class="arch-node-name">PostgreSQL</div>
+                <div class="arch-node-tech">SQLModel · SQLAlchemy</div>
+              </div>
+              <div class="arch-connector">
+                <div class="arch-line"></div>
+                <span class="arch-conn-label">Deploy</span>
+              </div>
+              <div class="arch-node arch-cloud">
+                <div class="arch-node-icon"><i class="bi bi-cloud-arrow-up-fill" aria-hidden="true"></i></div>
+                <div class="arch-node-name">Railway</div>
+                <div class="arch-node-tech">Cloud · Auto Deploy</div>
+              </div>
+            </div>
+          </div>
         </article>
 
         <!-- Other Projects -->
@@ -535,21 +707,19 @@ app = FastAPI()
                 <i class="bi bi-bar-chart-line-fill" aria-hidden="true"></i>
               </div>
               <div class="proj-links">
-                <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="Ver Controle de Caixa Pro no GitHub">
+                <a href="https://github.com/LuisEdu17y/Controle-de-Caixa-Pro" target="_blank" rel="noopener noreferrer" aria-label="Ver Controle de Caixa Pro no GitHub">
                   <i class="bi bi-github" aria-hidden="true"></i>
-                </a>
-                <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="Demo do Controle de Caixa Pro">
-                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
 
             <h3 class="proj-title">Controle de Caixa Pro</h3>
-            <p class="proj-type">Dashboard Financeiro · JavaScript</p>
+            <p class="proj-type">Dashboard Financeiro · JavaScript ES6+</p>
             <p class="proj-desc">
-              Dashboard de gestão financeira pessoal com gráficos dinâmicos via Chart.js,
-              conversão em tempo real para USD, EUR e BTC, e pipeline de CI/CD completo com
-              testes automatizados e deploy na Vercel.
+              Problema: controlar finanças pessoais sem depender de apps proprietários.
+              Solução: dashboard com gráficos dinâmicos (Chart.js), conversão em tempo real
+              para USD/EUR/BTC via API externa, e pipeline CI/CD completo — testes Jest
+              automatizados a cada push no GitHub Actions.
             </p>
 
             <ul class="proj-achievements" aria-label="Diferenciais do projeto">
@@ -796,14 +966,21 @@ app = FastAPI()
           <div class="contact-header" data-aos="fade-up">
             <div class="cta-badge">
               <span class="status-dot" aria-hidden="true"></span>
-              Disponível para estágio
+              Disponível para início imediato
             </div>
             <h2>Vamos conversar?</h2>
             <p>
               Estou ativamente buscando oportunidades de estágio em
               <strong>Desenvolvimento Web</strong>, <strong>Back-End Python</strong>
               ou áreas correlatas de TI em Brasília — DF ou remoto.
+              Respondo em até <strong>24h</strong>.
             </p>
+            <div class="contact-visitor" aria-label="Contador de visitas">
+              <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fportifolio-website-hub.vercel.app&count_bg=%236366f1&title_bg=%230e0e1a&icon=github.svg&icon_color=%23E7E7E7&title=visitas&edge_flat=false"
+                   alt="Contador de visitas ao portfólio"
+                   loading="lazy"
+                   height="22">
+            </div>
           </div>
 
           <div class="contact-channels" data-aos="fade-up" data-aos-delay="100">

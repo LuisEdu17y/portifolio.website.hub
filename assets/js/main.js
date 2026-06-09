@@ -175,4 +175,50 @@
     });
   }
 
+  /* ── Hero stat counters (animated count-up) ──────────────── */
+  if ('IntersectionObserver' in window) {
+    const statNums = document.querySelectorAll('.hstat-num[data-count]');
+
+    function animateCounter(el) {
+      const target   = parseInt(el.getAttribute('data-count'), 10);
+      const duration = 1200;
+      const step     = 16;
+      const steps    = duration / step;
+      const increment = target / steps;
+      let current = 0;
+
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          el.textContent = target;
+          clearInterval(timer);
+        } else {
+          el.textContent = Math.floor(current);
+        }
+      }, step);
+    }
+
+    const statsObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          statsObs.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '-60px' });
+
+    statNums.forEach(el => statsObs.observe(el));
+  }
+
+  /* ── Architecture diagram hover microinteraction ─────────── */
+  document.querySelectorAll('.arch-node').forEach(node => {
+    node.addEventListener('mouseenter', () => {
+      node.style.transform = 'translateY(-3px)';
+      node.style.transition = 'transform 0.2s ease, border-color 0.22s ease, box-shadow 0.22s ease';
+    });
+    node.addEventListener('mouseleave', () => {
+      node.style.transform = '';
+    });
+  });
+
 })();

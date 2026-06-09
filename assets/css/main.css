@@ -1422,6 +1422,288 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 [data-aos].aos-animate { pointer-events: auto; }
 
 /* ──────────────────────────────────────────────────────────────
+   HERO STATS BAR
+────────────────────────────────────────────────────────────── */
+.hero-stats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.hstat {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.hstat-num {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-1);
+  line-height: 1;
+}
+
+.hstat-label {
+  font-size: 0.7rem;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+
+.hstat-sep {
+  width: 1px;
+  height: 36px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+.hstat-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   ABOUT ACHIEVEMENTS
+────────────────────────────────────────────────────────────── */
+.about-achievements {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.ach-card {
+  background: var(--bg-card-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 18px 12px;
+  text-align: center;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.ach-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(99,102,241,0.1);
+}
+
+.ach-num {
+  font-family: var(--font-mono);
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  display: block;
+}
+
+.ach-label {
+  font-size: 0.7rem;
+  color: var(--text-2);
+  display: block;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   SKILL PROFICIENCY LEVELS
+────────────────────────────────────────────────────────────── */
+.skill-lvl {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lvl-high {
+  background: rgba(99,102,241,0.15);
+  color: var(--accent-2);
+  border: 1px solid rgba(99,102,241,0.3);
+}
+
+.lvl-mid {
+  background: rgba(34,211,238,0.08);
+  color: var(--cyan);
+  border: 1px solid rgba(34,211,238,0.2);
+}
+
+.lvl-low {
+  background: rgba(148,163,184,0.06);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+}
+
+/* Skill legend */
+.skill-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.legend-label {
+  font-size: 0.8rem;
+  color: var(--text-3);
+  font-weight: 500;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   GITHUB STATS ROW (Streak + Top Languages)
+────────────────────────────────────────────────────────────── */
+.gh-stats-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.gh-streak-card,
+.gh-langs-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   ARCHITECTURE DIAGRAM
+────────────────────────────────────────────────────────────── */
+.arch-diagram-wrapper {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
+}
+
+.arch-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-2);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.arch-title i { color: var(--accent-2); }
+
+.arch-diagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.arch-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  text-align: center;
+  min-width: 130px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.arch-node:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(99,102,241,0.12);
+}
+
+.arch-node-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.arch-node-name {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-1);
+}
+
+.arch-node-tech {
+  font-size: 0.68rem;
+  color: var(--text-3);
+}
+
+.arch-frontend .arch-node-icon { background: rgba(34,211,238,0.1); color: var(--cyan); }
+.arch-fastapi  .arch-node-icon { background: rgba(99,102,241,0.12); color: var(--accent-2); }
+.arch-db       .arch-node-icon { background: rgba(249,115,22,0.1); color: var(--orange); }
+.arch-cloud    .arch-node-icon { background: rgba(34,197,94,0.1); color: var(--green); }
+
+.arch-connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 8px;
+  flex-shrink: 0;
+}
+
+.arch-line {
+  width: 40px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--border), var(--accent), var(--border));
+  position: relative;
+}
+
+.arch-line::after {
+  content: '';
+  position: absolute;
+  right: -6px;
+  top: -4px;
+  border: 5px solid transparent;
+  border-left: 8px solid var(--accent);
+}
+
+.arch-conn-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   CONTACT VISITOR COUNTER
+────────────────────────────────────────────────────────────── */
+.contact-visitor {
+  margin-top: 16px;
+  opacity: 0.7;
+}
+
+.contact-visitor img {
+  display: inline-block;
+  border-radius: 4px;
+}
+
+/* ──────────────────────────────────────────────────────────────
    RESPONSIVE — Tablet (< 1024px)
 ────────────────────────────────────────────────────────────── */
 @media (max-width: 1023px) {
@@ -1430,11 +1712,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-visual { display: none; }
   .hero-actions { justify-content: center; }
   .hero-stack { justify-content: center; }
+  .hero-stats { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo-col { align-items: center; }
   .about-info { grid-template-columns: 1fr 1fr; }
   .featured-grid { grid-template-columns: 1fr; }
   .featured-visual { display: none; }
+  .gh-stats-row { grid-template-columns: 1fr; }
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -1499,6 +1783,40 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
   /* About info */
   .about-info { grid-template-columns: 1fr; }
+
+  /* About achievements */
+  .about-achievements { grid-template-columns: repeat(3, 1fr); }
+
+  /* Hero stats */
+  .hero-stats { gap: 14px; }
+  .hstat-sep { display: none; }
+
+  /* Architecture diagram */
+  .arch-diagram {
+    flex-direction: column;
+    gap: 0;
+  }
+  .arch-connector {
+    flex-direction: column;
+    padding: 4px 0;
+  }
+  .arch-line {
+    width: 2px;
+    height: 28px;
+    background: linear-gradient(180deg, var(--border), var(--accent), var(--border));
+  }
+  .arch-line::after {
+    right: -4px;
+    top: auto;
+    bottom: -6px;
+    border: 5px solid transparent;
+    border-top: 8px solid var(--accent);
+    border-left: none;
+  }
+  .arch-node { min-width: 180px; }
+
+  /* GitHub stats row */
+  .gh-stats-row { grid-template-columns: 1fr; }
 
   /* Contact */
   .channel { padding: 14px 16px; }
