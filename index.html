@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Luís Eduardo Carvalho Ferreira | Desenvolvedor Full Stack Python & JavaScript</title>
+  <meta name="description" content="Desenvolvedor Full Stack especializado em Python, FastAPI e JavaScript. Estudante de ADS no UniCEUB (3º sem), com projetos em produção usando FastAPI, PostgreSQL, JWT e CI/CD. Disponível para estágio em TI em Brasília.">
+  <meta name="keywords" content="desenvolvedor web, python, fastapi, javascript, full stack, estágio TI, Brasília, ADS, PostgreSQL, back-end">
+  <meta name="author" content="Luís Eduardo Carvalho Ferreira">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://portifolio-website-hub.vercel.app">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portifolio-website-hub.vercel.app">
+  <meta property="og:title" content="Luís Eduardo | Desenvolvedor Full Stack Python & JavaScript">
+  <meta property="og:description" content="Estudante de ADS com projetos reais em produção: FastAPI, PostgreSQL, JWT, CI/CD. Disponível para estágio em TI.">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luís Eduardo | Desenvolvedor Full Stack">
+  <meta name="twitter:description" content="Full Stack em Python e JavaScript. Apps em produção com FastAPI, PostgreSQL e deploy automatizado.">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header / Navbar ======= -->
+  <header id="header">
+    <nav class="navbar" role="navigation" aria-label="Navegação principal">
+      <div class="nav-container">
+
+        <a href="#hero" class="nav-logo" aria-label="Ir para o início">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">LE</span><span class="logo-bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav-links" id="navLinks" role="menubar">
+          <li role="none"><a href="#sobre" role="menuitem">Sobre</a></li>
+          <li role="none"><a href="#habilidades" role="menuitem">Skills</a></li>
+          <li role="none"><a href="#projetos" role="menuitem">Projetos</a></li>
+          <li role="none"><a href="#experiencia" role="menuitem">Experiência</a></li>
+          <li role="none"><a href="#contato" role="menuitem">Contato</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <span class="availability-badge" aria-label="Disponível para estágio">
+            <span class="status-dot" aria-hidden="true"></span>
+            Disponível para estágio
+          </span>
+          <a href="Curriculo_Luis_Eduardo_Ferreira.pdf" download class="btn-resume">
+            <i class="bi bi-download" aria-hidden="true"></i>
+            Currículo
+          </a>
+          <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+  <!-- /Header -->
+
+  <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero-section" aria-label="Apresentação">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="hero-container">
+
+        <div class="hero-content">
+          <div class="hero-badge" data-aos="fade-down" data-aos-duration="600">
+            <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+            ADS · 3º Semestre · UniCEUB
+          </div>
+
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+            Luís Eduardo
+            <br>
+            <span class="gradient-text">Carvalho Ferreira</span>
+          </h1>
+
+          <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700">
+            Desenvolvedor <span id="typed" aria-live="polite"></span>
+          </p>
+
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="300" data-aos-duration="700">
+            Construindo aplicações web modernas com foco em
+            <strong>Back-End</strong>, <strong>APIs REST</strong> e
+            <strong>Banco de Dados</strong>. Aplicações reais, em produção, com código limpo.
+          </p>
+
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700">
+            <a href="#projetos" class="btn-primary">
+              <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+              Ver Projetos
+            </a>
+            <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+              <i class="bi bi-github" aria-hidden="true"></i>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/lu%C3%ADs-eduardo-00a685359" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+              <i class="bi bi-linkedin" aria-hidden="true"></i>
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="hero-stack" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
+            <span class="stack-label">Stack principal:</span>
+            <div class="stack-pills" role="list" aria-label="Tecnologias principais">
+              <span class="stack-pill" role="listitem">Python</span>
+              <span class="stack-pill" role="listitem">FastAPI</span>
+              <span class="stack-pill" role="listitem">JavaScript</span>
+              <span class="stack-pill" role="listitem">PostgreSQL</span>
+              <span class="stack-pill" role="listitem">Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="300" data-aos-duration="800" aria-hidden="true">
+          <div class="code-window">
+            <div class="window-header">
+              <span class="w-dot red"></span>
+              <span class="w-dot yellow"></span>
+              <span class="w-dot green"></span>
+              <span class="window-title">main.py</span>
+            </div>
+            <div class="code-body">
+              <pre><code><span class="c-kw">from</span> fastapi <span class="c-kw">import</span> FastAPI
+<span class="c-kw">from</span> sqlmodel <span class="c-kw">import</span> SQLModel
+
+app = FastAPI()
+
+<span class="c-dec">@app.get</span>(<span class="c-str">"/developer"</span>)
+<span class="c-kw">async def</span> <span class="c-fn">get_dev</span>():
+    <span class="c-kw">return</span> {
+        <span class="c-str">"name"</span>: <span class="c-str">"Luís Eduardo"</span>,
+        <span class="c-str">"role"</span>: <span class="c-str">"Full Stack Dev"</span>,
+        <span class="c-str">"stack"</span>: [<span class="c-str">"Python"</span>,
+                  <span class="c-str">"FastAPI"</span>,
+                  <span class="c-str">"JavaScript"</span>,
+                  <span class="c-str">"PostgreSQL"</span>],
+        <span class="c-str">"status"</span>: <span class="c-str">"Disponível ✓"</span>
+    }</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para Sobre">
+        <span>Scroll</span>
+        <i class="bi bi-chevron-down" aria-hidden="true"></i>
+      </a>
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="sobre" class="section about-section">
+      <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">01 — Sobre</span>
+          <h2>Quem sou eu</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div class="about-photo-col" data-aos="fade-right" data-aos-duration="700">
+            <div class="photo-wrapper">
+              <img src="imagem/518168897_18118085611491389_2470368049488673083_n.jpg"
+                   alt="Foto de Luís Eduardo Carvalho Ferreira, desenvolvedor full stack"
+                   loading="lazy"
+                   width="320" height="320">
+              <div class="photo-ring" aria-hidden="true"></div>
+            </div>
+
+            <div class="github-card" data-aos="fade-up" data-aos-delay="200">
+              <img src="https://github-readme-stats.vercel.app/api?username=LuisEdu17y&show_icons=true&theme=dark&bg_color=0d1117&title_color=6366f1&icon_color=6366f1&text_color=e2e8f0&border_color=30363d&count_private=true&hide_border=false"
+                   alt="Estatísticas do GitHub de Luís Eduardo"
+                   loading="lazy"
+                   class="github-stats-img">
+            </div>
+          </div>
+
+          <div class="about-content-col" data-aos="fade-left" data-aos-duration="700">
+            <p class="about-lead">
+              Sou um desenvolvedor full stack apaixonado por tecnologia, com foco em construir
+              soluções robustas no back-end usando <strong>Python e FastAPI</strong>.
+              No 3º semestre de ADS no UniCEUB, já coloquei em produção aplicações completas
+              com autenticação JWT, banco relacional e CI/CD.
+            </p>
+
+            <p class="about-body">
+              Minha experiência prática inclui desenvolvimento de APIs RESTful, integração com
+              PostgreSQL via ORM SQLModel/SQLAlchemy, deploys automatizados no Railway e Vercel,
+              e escrita de testes unitários com Jest. Busco minha primeira oportunidade de estágio
+              para crescer em equipe e contribuir com soluções reais.
+            </p>
+
+            <dl class="about-info">
+              <div class="info-row">
+                <dt><i class="bi bi-geo-alt" aria-hidden="true"></i> Localização</dt>
+                <dd>Núcleo Bandeirante — Brasília, DF</dd>
+              </div>
+              <div class="info-row">
+                <dt><i class="bi bi-mortarboard" aria-hidden="true"></i> Graduação</dt>
+                <dd>ADS — UniCEUB (previsão 2027)</dd>
+              </div>
+              <div class="info-row">
+                <dt><i class="bi bi-envelope" aria-hidden="true"></i> E-mail</dt>
+                <dd><a href="mailto:luis.eduardo17y@gmail.com">luis.eduardo17y@gmail.com</a></dd>
+              </div>
+              <div class="info-row">
+                <dt><i class="bi bi-telephone" aria-hidden="true"></i> Telefone</dt>
+                <dd><a href="tel:+5561991855550">(61) 99185-5550</a></dd>
+              </div>
+            </dl>
+
+            <div class="currently-learning">
+              <h3 class="learning-title">
+                <i class="bi bi-book-half" aria-hidden="true"></i>
+                Atualmente estudando
+              </h3>
+              <div class="learning-pills" role="list" aria-label="Tecnologias em aprendizado">
+                <span class="learning-pill" role="listitem">
+                  <span class="pill-dot" aria-hidden="true"></span>
+                  SQL Avançado (Udemy)
+                </span>
+                <span class="learning-pill" role="listitem">
+                  <span class="pill-dot" aria-hidden="true"></span>
+                  Docker
+                </span>
+                <span class="learning-pill" role="listitem">
+                  <span class="pill-dot" aria-hidden="true"></span>
+                  React
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="habilidades" class="section skills-section">
+      <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">02 — Habilidades</span>
+          <h2>Stack Tecnológico</h2>
+          <p>Tecnologias que utilizo para construir soluções completas do front ao back</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+            <div class="cat-header">
+              <div class="cat-icon cat-frontend" aria-hidden="true">
+                <i class="bi bi-browser-chrome"></i>
+              </div>
+              <h3>Front-End</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="36" height="36" loading="lazy">
+                <span>HTML5</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="36" height="36" loading="lazy">
+                <span>CSS3</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="36" height="36" loading="lazy">
+                <span>JavaScript</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="36" height="36" loading="lazy">
+                <span>Bootstrap 5</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+            <div class="cat-header">
+              <div class="cat-icon cat-backend" aria-hidden="true">
+                <i class="bi bi-server"></i>
+              </div>
+              <h3>Back-End</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="36" height="36" loading="lazy">
+                <span>Python</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI" width="36" height="36" loading="lazy">
+                <span>FastAPI</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <i class="bi bi-shield-lock-fill skill-icon-bi" aria-hidden="true"></i>
+                <span>JWT Auth</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <i class="bi bi-arrow-left-right skill-icon-bi" aria-hidden="true"></i>
+                <span>REST APIs</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+            <div class="cat-header">
+              <div class="cat-icon cat-database" aria-hidden="true">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <h3>Banco de Dados</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="36" height="36" loading="lazy">
+                <span>PostgreSQL</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="36" height="36" loading="lazy">
+                <span>MySQL</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" width="36" height="36" loading="lazy">
+                <span>SQLite</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <i class="bi bi-layers-fill skill-icon-bi" aria-hidden="true"></i>
+                <span>SQLAlchemy</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+            <div class="cat-header">
+              <div class="cat-icon cat-tools" aria-hidden="true">
+                <i class="bi bi-tools"></i>
+              </div>
+              <h3>Ferramentas & DevOps</h3>
+            </div>
+            <ul class="skill-list" role="list">
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="36" height="36" loading="lazy">
+                <span>Git</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="36" height="36" loading="lazy">
+                <span>GitHub</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <i class="bi bi-infinity skill-icon-bi" aria-hidden="true"></i>
+                <span>GitHub Actions</span>
+              </li>
+              <li class="skill-item" role="listitem">
+                <i class="bi bi-cloud-arrow-up-fill skill-icon-bi" aria-hidden="true"></i>
+                <span>Railway / Vercel</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- GitHub Contribution Graph -->
+        <div class="gh-contribution" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="gh-title">
+            <i class="bi bi-activity" aria-hidden="true"></i>
+            Atividade no GitHub
+          </h3>
+          <div class="gh-graph-wrapper">
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=LuisEdu17y&theme=react-dark&bg_color=0a0a14&color=6366f1&line=6366f1&point=22d3ee&hide_border=true&area=true"
+                 alt="Gráfico de contribuições do GitHub de Luís Eduardo"
+                 loading="lazy"
+                 class="gh-graph-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Skills Section -->
+
+    <!-- ======= Projects Section ======= -->
+    <section id="projetos" class="section projects-section">
+      <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">03 — Projetos</span>
+          <h2>O que eu construí</h2>
+          <p>Projetos reais com código em produção e deploy na nuvem</p>
+        </div>
+
+        <!-- Featured Project: Conecta Bairro -->
+        <article class="featured-project" data-aos="fade-up" aria-label="Projeto destaque: Conecta Bairro">
+          <div class="featured-label" aria-hidden="true">
+            <i class="bi bi-star-fill"></i> Projeto Destaque
+          </div>
+
+          <div class="featured-grid">
+            <div class="featured-info">
+              <h3 class="featured-title">Conecta Bairro</h3>
+              <p class="featured-type">Aplicação Web Full Stack · PWA</p>
+
+              <p class="featured-desc">
+                Plataforma comunitária completa que conecta moradores a eventos locais.
+                Back-end robusto com API REST, autenticação JWT, banco relacional e
+                deploy em nuvem. Front-end responsivo com capacidades de Progressive Web App.
+              </p>
+
+              <ul class="featured-highlights" aria-label="Funcionalidades">
+                <li>
+                  <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                  Geolocalização — "Próximos de mim"
+                </li>
+                <li>
+                  <i class="bi bi-people-fill" aria-hidden="true"></i>
+                  Controle de vagas e lista de espera automática
+                </li>
+                <li>
+                  <i class="bi bi-star-fill" aria-hidden="true"></i>
+                  Sistema de avaliações com notas
+                </li>
+                <li>
+                  <i class="bi bi-phone-fill" aria-hidden="true"></i>
+                  Progressive Web App (instalável)
+                </li>
+                <li>
+                  <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+                  Autenticação JWT com painel administrativo
+                </li>
+              </ul>
+
+              <div class="featured-stack" aria-label="Tecnologias usadas">
+                <span class="ftag python">Python</span>
+                <span class="ftag">FastAPI</span>
+                <span class="ftag">PostgreSQL</span>
+                <span class="ftag">SQLModel</span>
+                <span class="ftag">JWT</span>
+                <span class="ftag">Railway</span>
+                <span class="ftag">PWA</span>
+              </div>
+
+              <div class="featured-actions">
+                <a href="https://github.com/LuisEdu17y/Cadastro_conecta_bairro" target="_blank" rel="noopener noreferrer" class="btn-gh">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  Ver no GitHub
+                </a>
+                <a href="https://github.com/LuisEdu17y/Cadastro_conecta_bairro" target="_blank" rel="noopener noreferrer" class="btn-demo">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Demo ao vivo
+                </a>
+              </div>
+            </div>
+
+            <div class="featured-visual" aria-hidden="true">
+              <div class="api-mockup">
+                <div class="api-header">
+                  <div class="api-dots">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <span class="api-title">Conecta Bairro · API</span>
+                </div>
+                <div class="api-body">
+                  <div class="api-route">
+                    <span class="method get">GET</span>
+                    <span class="route">/api/events/nearby</span>
+                    <span class="code ok">200</span>
+                  </div>
+                  <div class="api-route">
+                    <span class="method post">POST</span>
+                    <span class="route">/api/auth/login</span>
+                    <span class="code ok">200</span>
+                  </div>
+                  <div class="api-route">
+                    <span class="method post">POST</span>
+                    <span class="route">/api/events/{id}/join</span>
+                    <span class="code created">201</span>
+                  </div>
+                  <div class="api-route">
+                    <span class="method get">GET</span>
+                    <span class="route">/api/events/{id}/reviews</span>
+                    <span class="code ok">200</span>
+                  </div>
+                  <div class="api-route">
+                    <span class="method del">DELETE</span>
+                    <span class="route">/api/events/{id}/waitlist</span>
+                    <span class="code ok">200</span>
+                  </div>
+                  <div class="api-divider"></div>
+                  <div class="api-info">
+                    <span class="info-item"><i class="bi bi-shield-check"></i> JWT Protected</span>
+                    <span class="info-item"><i class="bi bi-database"></i> PostgreSQL</span>
+                    <span class="info-item"><i class="bi bi-cloud"></i> Railway</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Other Projects -->
+        <div class="projects-grid">
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="100" aria-label="Projeto: Controle de Caixa Pro">
+            <div class="project-card-top">
+              <div class="proj-icon">
+                <i class="bi bi-bar-chart-line-fill" aria-hidden="true"></i>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="Ver Controle de Caixa Pro no GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="Demo do Controle de Caixa Pro">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="proj-title">Controle de Caixa Pro</h3>
+            <p class="proj-type">Dashboard Financeiro · JavaScript</p>
+            <p class="proj-desc">
+              Dashboard de gestão financeira pessoal com gráficos dinâmicos via Chart.js,
+              conversão em tempo real para USD, EUR e BTC, e pipeline de CI/CD completo com
+              testes automatizados e deploy na Vercel.
+            </p>
+
+            <ul class="proj-achievements" aria-label="Diferenciais do projeto">
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Testes unitários com Jest</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Pipeline CI no GitHub Actions</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Padronização com ESLint</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Deploy automatizado na Vercel</li>
+            </ul>
+
+            <div class="proj-stack" aria-label="Tecnologias">
+              <span>JavaScript ES6+</span>
+              <span>Chart.js</span>
+              <span>Jest</span>
+              <span>GitHub Actions</span>
+              <span>Vercel</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-aos="fade-up" data-aos-delay="200" aria-label="Projeto: Projeto Integrador I">
+            <div class="project-card-top">
+              <div class="proj-icon academic" aria-hidden="true">
+                <i class="bi bi-database-fill-gear"></i>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="Ver Projeto Integrador no GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="proj-title">Projeto Integrador I</h3>
+            <p class="proj-type">Projeto Acadêmico em Equipe · UniCEUB</p>
+            <p class="proj-desc">
+              Projeto em equipe com metodologia ágil (Scrum). Atuo como
+              <strong>Analista de Dados / DBA</strong>, responsável pela modelagem
+              e estruturação do banco de dados com versionamento colaborativo no GitHub.
+            </p>
+
+            <ul class="proj-achievements" aria-label="Atividades no projeto">
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Modelagem do banco de dados</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Metodologia Scrum / Ágil</li>
+              <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Colaboração no GitHub</li>
+            </ul>
+
+            <div class="proj-stack" aria-label="Tecnologias">
+              <span>SQL</span>
+              <span>PostgreSQL</span>
+              <span>Scrum</span>
+              <span>GitHub</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- /Projects Section -->
+
+    <!-- ======= Experience Section ======= -->
+    <section id="experiencia" class="section experience-section">
+      <div class="container">
+
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">04 — Trajetória</span>
+          <h2>Experiência & Formação</h2>
+        </div>
+
+        <div class="timeline-grid">
+
+          <!-- Experiência Profissional -->
+          <div class="timeline-col" data-aos="fade-right" data-aos-duration="700">
+            <h3 class="timeline-col-title">
+              <i class="bi bi-briefcase-fill" aria-hidden="true"></i>
+              Experiência Profissional
+            </h3>
+
+            <div class="timeline-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-period" datetime="2024">2024 — Atual</time>
+                <h4 class="tl-role">Auxiliar Administrativo</h4>
+                <p class="tl-company">AFESTIVA — 106 Asa Sul, Brasília DF</p>
+                <ul class="tl-tasks">
+                  <li>Atendimento ao público e suporte às demandas operacionais diárias</li>
+                  <li>Organização e controle de documentos e processos internos</li>
+                  <li>Suporte geral à equipe, desenvolvendo comunicação e proatividade</li>
+                </ul>
+                <div class="soft-skills" aria-label="Habilidades desenvolvidas">
+                  <span>Comunicação</span>
+                  <span>Organização</span>
+                  <span>Trabalho em equipe</span>
+                  <span>Responsabilidade</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formação Acadêmica -->
+          <div class="timeline-col" data-aos="fade-left" data-aos-duration="700">
+            <h3 class="timeline-col-title">
+              <i class="bi bi-mortarboard-fill" aria-hidden="true"></i>
+              Formação Acadêmica
+            </h3>
+
+            <div class="timeline-item">
+              <div class="tl-dot active" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-period" datetime="2025">2025 — 2027 · <span class="badge-ongoing">Em andamento</span></time>
+                <h4 class="tl-role">Análise e Desenvolvimento de Sistemas</h4>
+                <p class="tl-company">UniCEUB — Centro Universitário de Brasília</p>
+                <p class="tl-desc">3º semestre · Desenvolvimento web, banco de dados, engenharia de software e metodologias ágeis.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="tl-dot" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-period" datetime="2022">2022 — 2023</time>
+                <h4 class="tl-role">Ensino Médio Completo</h4>
+                <p class="tl-company">Colégio Estadual Prof. José Carneiro Filho</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certificações -->
+        <div class="certifications" data-aos="fade-up">
+          <h3 class="certs-title">
+            <i class="bi bi-award-fill" aria-hidden="true"></i>
+            Certificações & Cursos
+          </h3>
+
+          <div class="certs-grid">
+
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="cert-icon cert-cisco" aria-hidden="true">
+                <i class="bi bi-wifi"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Cisco Networking Basics</h4>
+                <p>Cisco Networking Academy</p>
+                <span class="cert-status done">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  Concluído · Nov/2025
+                </span>
+              </div>
+            </div>
+
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="cert-icon cert-office" aria-hidden="true">
+                <i class="bi bi-file-earmark-spreadsheet-fill"></i>
+              </div>
+              <div class="cert-info">
+                <h4>Pacote Office 2016 · 110h</h4>
+                <p>Fundação Bradesco · Escola Virtual</p>
+                <span class="cert-status done">
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+                  Concluído · Mai/2026
+                </span>
+              </div>
+            </div>
+
+            <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="cert-icon cert-sql" aria-hidden="true">
+                <i class="bi bi-database-fill"></i>
+              </div>
+              <div class="cert-info">
+                <h4>SQL Bootcamp: Zero to Hero</h4>
+                <p>Udemy</p>
+                <span class="cert-status progress">
+                  <i class="bi bi-hourglass-split" aria-hidden="true"></i>
+                  Em andamento
+                </span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Evolution Timeline -->
+        <div class="evolution" data-aos="fade-up">
+          <h3 class="evolution-title">Minha Evolução como Desenvolvedor</h3>
+          <div class="evolution-track" role="list" aria-label="Timeline de evolução">
+
+            <div class="evo-item" role="listitem">
+              <time class="evo-year" datetime="2022">2022</time>
+              <div class="evo-dot" aria-hidden="true"></div>
+              <div class="evo-desc">
+                <strong>Primeiros passos</strong>
+                <small>HTML &amp; CSS</small>
+              </div>
+            </div>
+
+            <div class="evo-item" role="listitem">
+              <time class="evo-year" datetime="2023">2023</time>
+              <div class="evo-dot" aria-hidden="true"></div>
+              <div class="evo-desc">
+                <strong>JavaScript</strong>
+                <small>Lógica &amp; DOM</small>
+              </div>
+            </div>
+
+            <div class="evo-item" role="listitem">
+              <time class="evo-year" datetime="2024">2024</time>
+              <div class="evo-dot" aria-hidden="true"></div>
+              <div class="evo-desc">
+                <strong>Python &amp; SQL</strong>
+                <small>Back-end básico</small>
+              </div>
+            </div>
+
+            <div class="evo-item" role="listitem">
+              <time class="evo-year" datetime="2025">2025</time>
+              <div class="evo-dot active" aria-hidden="true"></div>
+              <div class="evo-desc">
+                <strong>FastAPI &amp; Deploy</strong>
+                <small>Apps em produção</small>
+              </div>
+            </div>
+
+            <div class="evo-item future" role="listitem">
+              <time class="evo-year" datetime="2026">2026</time>
+              <div class="evo-dot future" aria-hidden="true"></div>
+              <div class="evo-desc">
+                <strong>Estágio em TI</strong>
+                <small>Meta atual ✦</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- /Experience Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contato" class="section contact-section">
+      <div class="container">
+
+        <div class="contact-wrapper">
+
+          <div class="contact-header" data-aos="fade-up">
+            <div class="cta-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              Disponível para estágio
+            </div>
+            <h2>Vamos conversar?</h2>
+            <p>
+              Estou ativamente buscando oportunidades de estágio em
+              <strong>Desenvolvimento Web</strong>, <strong>Back-End Python</strong>
+              ou áreas correlatas de TI em Brasília — DF ou remoto.
+            </p>
+          </div>
+
+          <div class="contact-channels" data-aos="fade-up" data-aos-delay="100">
+
+            <a href="https://wa.me/5561991855550" target="_blank" rel="noopener noreferrer" class="channel whatsapp" aria-label="Contato via WhatsApp">
+              <div class="ch-icon">
+                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+              </div>
+              <div class="ch-info">
+                <span class="ch-label">WhatsApp</span>
+                <span class="ch-value">(61) 99185-5550</span>
+              </div>
+              <i class="bi bi-arrow-right ch-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="mailto:luis.eduardo17y@gmail.com" class="channel email" aria-label="Contato via e-mail">
+              <div class="ch-icon">
+                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              </div>
+              <div class="ch-info">
+                <span class="ch-label">E-mail</span>
+                <span class="ch-value">luis.eduardo17y@gmail.com</span>
+              </div>
+              <i class="bi bi-arrow-right ch-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://linkedin.com/in/lu%C3%ADs-eduardo-00a685359" target="_blank" rel="noopener noreferrer" class="channel linkedin" aria-label="Perfil no LinkedIn">
+              <div class="ch-icon">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
+              </div>
+              <div class="ch-info">
+                <span class="ch-label">LinkedIn</span>
+                <span class="ch-value">luís-eduardo-00a685359</span>
+              </div>
+              <i class="bi bi-arrow-right ch-arrow" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" class="channel github-ch" aria-label="Perfil no GitHub">
+              <div class="ch-icon">
+                <i class="bi bi-github" aria-hidden="true"></i>
+              </div>
+              <div class="ch-info">
+                <span class="ch-label">GitHub</span>
+                <span class="ch-value">LuisEdu17y</span>
+              </div>
+              <i class="bi bi-arrow-right ch-arrow" aria-hidden="true"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!-- /Contact Section -->
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          Desenvolvido por <strong>Luís Eduardo Carvalho Ferreira</strong> · 2026
+        </p>
+        <div class="footer-socials" aria-label="Redes sociais">
+          <a href="https://github.com/LuisEdu17y" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="bi bi-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://linkedin.com/in/lu%C3%ADs-eduardo-00a685359" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:luis.eduardo17y@gmail.com" aria-label="E-mail">
+            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+  <!-- Scroll Top Button -->
+  <a href="#hero" id="scroll-top" class="scroll-top" aria-label="Voltar ao topo">
+    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+  </a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

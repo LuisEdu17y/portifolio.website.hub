@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portifolio-website-hub.vercel.app/sitemap.xml
